@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosotros - Sistema Estudiantil</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">Sistema Estudiantil</a>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="about.html" class="nav-link active">Nosotros</a>
+        </div>
+        <div class="nav-right">
+            <span id="userName" class="user-name"></span>
+            <button id="loginBtn" class="icon-btn" title="Iniciar sesión">
+                <span class="login-icon">🔑</span>
+            </button>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h1>Conócenos</h1>
+            <p>Somos una institución educativa enfocada en la excelencia y la innovación.</p>
+            <p>Este sistema facilita el acceso rápido y sencillo a todos nuestros recursos educativos.</p>
+            <p>Nuestro equipo está compuesto por profesionales apasionados por la educación.</p>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Accede a tu cuenta</h2>
+            <form id="formLogin">
+                <input type="text" id="login" placeholder="Nombre de usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            &copy; 2025 <strong>Romain Baby</strong>. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

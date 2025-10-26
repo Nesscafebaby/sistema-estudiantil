@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Estudiantil</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">Sistema Estudiantil</a>
+            <a href="index.html" class="nav-link active">Inicio</a>
+            <a href="about.html" class="nav-link">Nosotros</a>
+        </div>
+        <div class="nav-right">
+            <span id="userName" class="user-name"></span>
+            <button id="loginBtn" class="icon-btn" title="Acceder">
+                <span class="login-icon">🔑</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenido al Sistema Estudiantil</h1>
+            <p>Plataforma diseñada para la gestión eficiente de estudiantes y profesores.</p>
+            <p>Desarrollado para el curso de Programación Web 2025, con enfoque en usabilidad y aprendizaje.</p>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Accede a tu cuenta</h2>
+            <form id="formLogin">
+                <input type="text" id="login" placeholder="Nombre de usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            &copy; 2025 <strong>Romain Baby</strong>. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
